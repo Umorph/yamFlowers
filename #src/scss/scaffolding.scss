@@ -3,11 +3,15 @@ body {
 
     font-family: $montserrat;
 
-    transition: all .3s ease;
+    transition: all 1s ease;
 }
 
 img {
     display: block;
+}
+
+svg {
+    @include smooth;
 }
 
 .visually-hidden:not(:focus):not(:active),

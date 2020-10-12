@@ -8,3 +8,7 @@
         font-style: #{$style};
     }
 }
+
+@mixin smooth() {
+    transition: all .3s ease;
+}
