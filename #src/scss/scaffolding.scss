@@ -1,7 +1,13 @@
 body {
     min-width: 320px;
 
+    font-family: $montserrat;
+
     transition: all .3s ease;
+}
+
+img {
+    display: block;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -26,7 +32,7 @@ a,
 button,
 input {
     &:focus {
-        outline: none;
+        outline: 1px solid black;
     }
 }
 
