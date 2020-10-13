@@ -1,0 +1,242 @@
+.offer-slider {
+    margin: 0;
+    padding: 0;
+
+    background-color: $lightGrey;
+
+    overflow: hidden;
+}
+
+.slick-slider {
+    position: relative;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.offer-slider__item {
+    margin: 0;
+    padding: 0;
+}
+
+.offer-slider__content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-slider__text-wrapper {
+    margin: 180px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.offer-slider__topic {
+    margin: 0;
+    padding: 0;
+
+    font-family: $montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $trueBlack;
+}
+
+.offer-slider__description {
+    margin: 30px 0 0;
+    padding: 0;
+
+    font-family: $montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $trueBlack;
+}
+
+.offer-slider__link-wrapper {
+    margin: 45px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.offer-slider__link {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 10px 30px;
+
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+    color: $trueWhite;
+    text-decoration: none;
+
+    background-color: $yamRed;
+    border-radius: 3px;
+
+    @include smooth;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0 5px 1px $yamRed;
+    }
+}
+
+.offer-slider__next-topic {
+    margin: 0 0 0 45px;
+    padding: 0;
+
+    font-family: $montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $trueBlack;
+}
+
+.offer-slider__image-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 730px;
+}
+
+.offer-slider__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.offer-slider .slick-arrow {
+    position: absolute;
+    bottom: 190px;
+    right: 0;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    background: none;
+    border: none;
+    border-radius: 3px;
+
+    z-index: 10;
+    cursor: pointer;
+
+    @include smooth;
+
+    &:hover,
+    &:focus {
+        background-color: $yamRed;
+
+        &::before,
+        &::after {
+            background-color: $trueWhite;
+        }
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: block;
+        width: 10px;
+        height: 1px;
+
+        background-color: $trueBlack;
+
+        transform: translate(-5px, -0.5px);
+
+        @include smooth;
+    }
+}
+
+.offer-slider .slick-prev {
+    right: 70px;
+
+    &::before {
+        left: 30%;
+
+        transform: rotate(135deg) translate(-5px, -0.5px);
+    }
+
+    &::after {
+        left: 30%;
+
+        transform: rotate(-135deg) translate(-5px, -0.5px);
+    }
+}
+
+.offer-slider .slick-next {
+    right: 10px;
+
+    &::before {
+        transform: rotate(45deg) translate(-5px, -0.5px);
+    }
+
+    &::after {
+        transform: rotate(-45deg) translate(-5px, -0.5px);
+    }
+}
+
+.offer-slider .slick-dots {
+    position: absolute;
+    bottom: 110px;
+    left: 500px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.offer-slider .slick-dots line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-slider .slick-dots button {
+    margin: 0 10px;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+
+    font-size: 0;
+
+    background: none;
+    background-color: $brightGrey;
+    border: none;
+    border-radius: 50%;
+
+    @include smooth;
+}
+
+.offer-slider .slick-active button {
+    background-color: $yamRed;
+    
+    @include smooth;
+}

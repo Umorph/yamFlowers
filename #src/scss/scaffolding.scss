@@ -36,7 +36,9 @@ a,
 button,
 input {
     &:focus {
-        outline: 1px solid black;
+        outline: none;
+        @include smooth;
+        box-shadow: 0px 0 5px 1px $yamRed;
     }
 }
 
