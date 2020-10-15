@@ -4,7 +4,9 @@ $(document).ready(function(){
     });
 
     $('.slider-offer__slider').slick({
-        autoplay: true,
-        autoplaySpeed: 1500,
+        centerMode: true,
+        variableWidth: true,
+        autoPlay: true,
+        autoPlaySpeed: 1500,
     });
 });
