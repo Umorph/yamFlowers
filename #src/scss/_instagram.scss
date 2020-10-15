@@ -1,0 +1,50 @@
+.instagram {
+    margin: 165px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.instagram__heading {
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    
+    font-family: $montserrat;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 43px;
+    letter-spacing: 0.2em;
+    color: $trueBlack;
+    
+    &--strong {
+        font-weight: 500;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            display: block;
+            width: 410px;
+            height: 1px;
+
+            background-color: $trueBlack;
+        }
+    }
+}
+
+.instagram__list {
+    margin: 55px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    list-style: none;
+}
